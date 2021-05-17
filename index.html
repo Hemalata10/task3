@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type='text/css' media='screen' href="style.css">
 </head>
 <body>
     <!------------Header--------------->
@@ -14,10 +14,17 @@
         <div class="container">
             <nav>
                 <img src="./images/logo.svg" class="logo">
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
                 <ul class="nav-ul">
                     <li><a href="#">Features</a></li>
                     <li><a href="#">Pricings</a></li>
                     <li><a href="#">Resources</a></li>
+                    <li class="login-1"><a href="#">Login</a></li>
+                    <li class="login-1"><a href="#">Sign Up</a></li>
                 </ul>
                 <div class="login">
                     <a href="#">Login</a>
@@ -27,52 +34,54 @@
         </div>
     </header>
     <main>
+        <!-------Intro section----------->
         <section class="intro-section">
             <div class="container intro">
                 <div class="intro-text">
-                    <h1>More than just<span>shorter links</span></h1>
-                    <p>Build your brand’s recognition and get detailed<br>insights 
+                    <h1 class="small">More than just<span>shorter links</span></h1>
+                    <p class="medium">Build your brand’s recognition and get detailed<br>insights 
                     on how your links are performing.</p>
-                    <a href="#" class="btn-large">Get Started</a>
+                    <a href="#" class="btn btn-large">Get Started</a>
                 </div>
                 <div class="intro-image">
                     <img src="./images/illustration-working.svg">
                 </div>
             </div>
         </section>
+        <!-------Input, about and features section----------->
         <section class="input-section">
             <div class="container">
-                <div class="input-box">
+                <div class="input-box large">
                     <form action="">
                         <input type="text" placeholder="Shorten a link here...">
                         <button class="link-btn">Shorten It</button>
                     </form>
                 </div>
                 <div class="about">
-                    <h3>Adavnced statistics</h3>
-                    <p>Track how your links are performing across the web with <br>our 
+                    <h2 class="small">Adavnced statistics</h2>
+                    <p class="medium">Track how your links are performing across the web with <br>our 
                         advanced statistics dashboard.</p>
                 </div>
-                <div class="third-section">
-                    <div class="container features"> 
-                        <div class="box1">
-                            <div class="box1-image">
+                <div class="features-section">
+                    <div class="feature"> 
+                        <div class="feature-box box1">
+                            <div class="feature-image">
                                 <img src="./images/icon-brand-recognition.svg">
                             </div>
-                            <h3>Brand Recognition</h3>
+                            <h3 class="small">Brand Recognition</h3>
                             <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instill confidence in your content.
                             </p>
                         </div>
-                        <div class="box1 box2">
-                            <div class="box1-image">
+                        <div class="feature-box box-2">
+                            <div class="feature-image">
                                 <img src="./images/icon-detailed-records.svg">
                             </div>
                             <h3>Detailed Records</h3>
                             <p>Gain insights into whomis clicking your links knowing when and where people engage with your content helps inform better decisions
                             </p>
                         </div>
-                        <div class="box1 box3">
-                            <div class="box1-image">
+                        <div class="feature-box box-3">
+                            <div class="feature-image">
                                 <img src="./images/icon-fully-customizable.svg">
                             </div>
                             <h3>Fully Customizable</h3>
@@ -80,54 +89,56 @@
                             </p>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </section> 
-        <section class="boost-section">
-            <h4>Boost your links today</h4>
-            <button class="btn-large">Get Started</button>
-        </section 
-    </main>
-    <footer>
-        <div class="footer-section">
-            <div class="text">
-                <h1>Shortly</h1>
-            </div>
-            <div class="list">
-                <div class="col-1">
-                    <ul>
-                        <li class="row">Features</li>
-                        <li>Link shortening</li>
-                        <li>Branded Links</li>
-                        <li>Analytics</li>
-                    </ul>
-                </div>
-                <div class="col-2">
-                    <ul>
-                        <li class="row">Resources</li>
-                        <li>Blog</li>
-                        <li>Developers</li>
-                        <li>support</li>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <ul>
-                       <li class="row">Company</li>
-                       <li>About</li>
-                       <li>Our team</li>
-                       <li>Careers</li>
-                       <li>Contact</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="social-icons">
-                <img src="./images/icon-facebook.svg">
-                <img src="./images/icon-twitter.svg">
-                <img src="./images/icon-pinterest.svg">
-                <img src="./images/icon-instagram.svg">
-            </div>
-        </div>
-    </footer>
+    </main>    
 </body>
 </html>
+<!------Boost section---->
+<section class="boost-section">
+    <div class="container boost">
+        <h2 class="medium">Boost your links today</h2>
+        <button class="btn btn-large">Get Started</button>
+    </div>
+</section>
+<!------Footer section---->
+<footer class="footer-section">
+    <div class="continer footer">
+        <div class="footer-img">
+            <h2>Shortly</h2>
+        </div>
+        <div class="footer-menu">
+           <p class="small">features</p>
+           <ul class="nav-ul-1 footer-links">
+                <li><a href="#">Link shortening</a></li>
+                <li><a href="#">Branded Links</a></li>
+                <li><a href="#">Analytics</a></li>
+            </ul>
+        </div>
+        <div class="footer-menu">
+            <p class="small">Resources</p>
+            <ul class="nav-ul-1 footer-links">
+                <li><a href="#">blog</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">support</a></li>
+            </ul>
+        </div>
+        <div class="footer-menu">
+            <p class="small">Company</p>
+            <ul class="nav-ul-1 footer-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Our team</a></li>
+                <li><a href="#">Careers</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+      <!--footer icons-->
+        <div class="social-icons">
+            <img src="./images/icon-facebook.svg">
+            <img src="./images/icon-twitter.svg">
+            <img src="./images/icon-pinterest.svg">
+            <img src="./images/icon-instagram.svg">
+        </div>
+    </div>
+</footer>
