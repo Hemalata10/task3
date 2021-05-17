@@ -158,8 +158,8 @@ nav{
     width: 45%;
 }
 /*   Input section   */
-.input-section{
-    background-color:var(--dark-gray);
+.input{
+    background-color: var(--dark-gray);
 }
 .input-box{
     background-color: var(--dark-violet);
@@ -169,7 +169,7 @@ nav{
     background-image: url(./images/bg-shorten-desktop.svg);
     border: 1px solid transparent;
     border-radius: .5rem;
-    transform: translateY(-80%);
+    transform: translateY(-90%);
 }
 .input-box form{
     display: flex;
@@ -371,12 +371,20 @@ nav{
         text-align: center;
         padding: 4rem 0;
     }
-    /*   Input section   */
-    .input-box from input{
-        width: 70%;
+     /*   input section   */
+    .input-box form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .input-box form input{
+        width: 100%;
     }
     .input-box form .link-btn{
-        width: 30%;
+        width: 100%;
+        margin-top: 15px;
+       
     }
     /*   Feature section   */
     .feature{
