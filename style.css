@@ -362,8 +362,7 @@ nav{
     }
     .toggle-button{
         display: flex;
-    }
-    
+    } 
     /*   Intro section   */
     .intro{
         flex-direction: column-reverse;
@@ -414,7 +413,7 @@ nav{
         transform: translateX(-50%);
     }
     .box2, .box3{
-       transform: translate(0%);
+       transform: translate(0px);
     }
     /* -------footer--------- */
     .footer{
