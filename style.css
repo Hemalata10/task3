@@ -18,7 +18,7 @@ p{
     line-height: 1.6;
 }
 section{
-    padding: 5rem 0;
+    padding: 5rem 0 12rem 0;
 }
 .container{
     width: 100%;
@@ -243,7 +243,7 @@ nav{
     background-color: var(--dark-violet);
     padding: 1.5rem;
     border:1px solid transparent;
-    border-radius: 50%;
+    border-radius: 70%;
     position: absolute;
     top: -3.5rem;
     left: 2.5rem;
@@ -256,13 +256,14 @@ nav{
     padding-bottom: 2.5rem;
 }
 .box-2{
-    margin-top: 4%;
+    transform:translateY(40px);
 }
 .box-3{
-    margin-top: 8%;
+    transform:translateY(80px);
 }
 /*   boost section   */
 .boost-section{
+    padding: 5rem 0 5rem 0;
     width: 100%;
     background-color: var(--dark-violet);
     position: relative;
@@ -283,12 +284,18 @@ nav{
 .boost{
     display: block;
     text-align: center;
-    z-index: -1;
+    z-index: 11;
 }
 .boost h2{
     font-size: 4rem;
     font-weight: 700;
     color:var(--white);
+}
+.btn-last{
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1.2rem 3.5rem;
+    border-style: none;
 }
 /*   Footer section   */
 .footer-section{
@@ -319,7 +326,6 @@ nav{
 .footer-menu p{
     color: var(--white);
 }
-
 .footer{
     display: flex;
     flex-direction: row;
@@ -387,39 +393,6 @@ nav{
     }
     /*   Feature section   */
     .feature{
-        flex-direction: column;
-        text-align: center;
-    }
-    .feature::after{
-        left: 50%;
-        top: 20%;
-        height: 50rem;
-        width: 0.5rem;
-    }
-    .feature{
-        flex-direction: column;
-        text-align: center;
-    }
-    .feature::after{
-        left: 50%;
-        top: 20%;
-        height: 50rem;
-        width: .5rem;
-    }
-    .feature-box{
-        margin-bottom: 10rem;
-    }
-    .feature-box:not(:last-child){
-        margin-right: 0;
-    }
-    .feature-image{
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .box-2,.box-3{
-        margin-top: 0;
-    }
-    .feature{
         margin-top: 5rem;
         flex-direction: column;
         text-align: center;
@@ -441,7 +414,7 @@ nav{
         transform: translateX(-50%);
     }
     .box2, .box3{
-        margin-top: 0;
+       transform: translate(0%);
     }
     /* -------footer--------- */
     .footer{
